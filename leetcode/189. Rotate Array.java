@@ -11,15 +11,12 @@ class Solution {
 
         // First, Reverse all the numbers
         reverse(nums, 0, nums.length-1);
-        System.out.println("first: "+nums);        
         
         // Second, reverse firsk k numbers
         reverse(nums, 0, k-1);
-        System.out.println("second: "+nums);        
         
         // Finally, revese last n-k numbers
         reverse(nums, k, nums.length-1);        
-        System.out.println("third: "+nums);        
     }
 
     private void reverse(int[] nums, int start, int end) {
